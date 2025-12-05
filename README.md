@@ -31,15 +31,15 @@ Examples of the type of measurements that can be processed:
 - **Stark-Tuning series** (several spectra acquired under varied bias voltages)
 
 The toolbox is structures around three main classes : 
-- **Spectrum** : contains the data of a single spectrum : intensities, wavelengths and power/current
-- **Serie** : contains several **Spectrum**s
-- **Series** : contains several **Series**s
+- `Spectrum` : contains the data of a single spectrum : intensities, wavelengths and power/current
+- `Serie` : contains several `Spectrum`s
+- `Series` : contains several `Series`s
 
-Each of the three types of object can be directly fitted, without having to fit each **Spectrum** one by one.
+Each of the three types of object can be directly fitted, without having to fit each `Spectrum` one by one.
 Moreover, the toolbox relies on the use of a description file named `measurements_infos.json`. 
 This file should be present in the directory of measurements files, informing the toolbox on the type of measurements present in the directory as well as in the subdirectories.
 During the loading of a measurement file, the corresponding `measurement_infos.json` file is searched for (closest in path) in order to read the measurement files in the right way.
-If a new file format has to be implemented, a new use case can be added in the construction method of the corresponding **Spectrum**, **Serie** or **Series** classes, and the corresponding keyword has to be referenced in the `measurement_infos.json` file, carefully placed in the measurement directory.
+If a new file format has to be implemented, a new use case can be added in the construction method of the corresponding `Spectrum`, `Serie` or `Series` classes, and the corresponding keyword has to be referenced in the `measurement_infos.json` file, carefully placed in the measurement directory.
 
 ## How to install 
 
