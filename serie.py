@@ -28,8 +28,8 @@ class Serie:
     def __init__(self, FILEPATH):
         """
         Load `Serie` by reading a measurement file.
-        Ex : a power series measurement (one spectrum acquired with varied excitation power)
-        The reading of new file formats can be implemented here (see below the example)
+        Example : a power series measurement (one spectrum acquired with varied excitation power).
+        The reading of new file formats can be implemented here (see below the example).
         Warning : The data file format has to be specified in the 'measurements_infos.json' file.
 
         :param FILEPATH: filepath of the measurement file to load
